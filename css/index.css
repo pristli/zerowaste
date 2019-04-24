@@ -1,44 +1,88 @@
-.home {
-  background-image: url(img/composting-cover-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 700px;
-  width: 975px;
-  position: relative;
-  z-index: 0;
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Nanum+Gothic');
+:root {
+ --primary-color: black;
 }
-.img-about img{
-  height: 200px;
-  width: 300px;
-}
-.images-small img{
-  height: 200px;
-  width: 300px;
-}
-.images-small{
-  display: flex;
-  flex-direction:row;
-}
-li:before {
-  content: '— ';
-  margin-left: -20px;
+body {
+    max-width: 980px;
+    margin: auto;
 }
 
-li {
-  margin-left: 20px;
+body, h1, h2, h3, p, div, nav, section, main {
+    margin: 0;
+    padding: 0;
+}
+header .container {
+  background-color: rgb(244, 158, 66);
+  padding: 15px;
+}
+
+header p .logo {
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  color: rgb(46, 150, 45);
+  text-align: center;
+  font-size: 2rem;
+  }
+  
+header .logo {
+  text-align: center;
+  }
+  
+header .container nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: 'Nanum Gothic', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  }
+header .container nav ul li a:hover{
+  text-decoration: underline;
+}
+header .container nav ul li {
   list-style: none;
 }
-
-.img-small{
-  height: 200px;
-  width: 300px;
-}
-.socials{
+header .container nav ul {
   display: flex;
-  flex-direction: row;
+	padding: 0;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
-.socials-img img{
-  height: 15px;
-  width: 15px;
+
+@media (min-width: 500px) {
+    header nav {  
+    display: flex;
+    }    
+
+    header nav ul {
+        flex: 1;
+    }
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.container{
+  max-height: 80px;
+}
+
+
+.banner {
+	background-image: url(../img/bucket.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+  height: 548px;
+  text-align: center
+}
+
+.banner h1 {
+  font-family: 'Indie Flower', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+@media (min-width: 500px) {
+  .banner h1 {
+        font-size: 5rem;
+    }
 }
