@@ -86,3 +86,34 @@ header .container nav ul {
         font-size: 5rem;
     }
 }
+
+.form input,
+textarea{
+	width: 50%;
+	margin-bottom: 20px;
+	padding: 10px 25px;
+	font-size: 14px;
+  	font-family: "Roboto";
+  	color: rgba(65, 61, 75, 0.502);
+}
+
+textarea{
+	height: 190px;
+ }
+
+.submit{
+	background-color: Transparent;
+	border:1px rgb(244, 158, 66) solid;
+	padding: 10px;
+	font-size: 16px;
+	color: rgb(0, 224, 208);
+	margin-left: 0px;
+	font-weight: bold;
+	max-width: 100px;
+	
+}
+.submit:hover{
+	background: rgb(244, 158, 66); ;
+	color: #fff;
+	transition: all ease 0.5s;
+}
