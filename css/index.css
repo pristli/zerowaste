@@ -1,19 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway|Lora');
 :root {
- --primary-color: black;
-}
-body {
-    max-width: 980px;
-    margin: auto;
+  --primary-color: black;
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3, p, div, nav, section, main {
-    margin: 0;
-    padding: 0;
+body {
+  max-width: 980px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1,
+h2,
+h3,
+p,
+div,
+nav,
+section,
+main {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: rgb(244, 158, 66);
 }
 header .container {
   background-color: rgb(244, 158, 66);
   padding: 15px;
+  min-height: 80px;
 }
 
 header p .logo {
@@ -22,126 +37,154 @@ header p .logo {
   color: rgb(46, 150, 45);
   text-align: center;
   font-size: 2rem;
-  }
-  
+}
+
 header .logo {
   text-align: center;
-  }
-  
+}
+
 header .container nav ul li a {
   text-decoration: none;
   color: var(--primary-color);
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
-  }
-header .container nav ul li a:hover{
+}
+
+header .container nav ul li a:hover {
   text-decoration: underline;
 }
+
 header .container nav ul li {
   list-style: none;
 }
+
 header .container nav ul {
   display: flex;
-	padding: 0;
-	justify-content: space-around;
-	flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 500px) {
-    header nav {  
+  header nav {
     display: flex;
-    }    
+  }
 
-    header nav ul {
-        flex: 1;
-    }
-    .banner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-.container{
-  max-height: 80px;
+  header nav ul {
+    flex: 1;
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-
-.banner {
-	background-image: url(../img/bucket.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-  height: 548px;
-  text-align: center
-}
-
-.banner h1 {
+h5 {
   font-family: 'Indie Flower', cursive;
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
+  color: rgb(244, 158, 66);
+  font-size: 6rem;
 }
-@media (min-width: 500px) {
-  .banner h1 {
-        font-size: 5rem;
-    }
+
+@media (min-width: 320px) {
+  .d-none {
+    display: block!important;
+  }
+  h5 {
+    font-size: 6rem; 
+  }
 }
-.aboutus h2 {
+
+@media (max-width: 730px) {
+  h5 {
+    font-size: 3rem; 
+  }
+}
+@media (max-width: 450px) {
+  h5 {
+    font-size: 1.5rem; 
+  }
+}
+
+h2 {
   text-align: center;
   padding: 15px;
   color: rgb(49, 91, 59);
   font-size: 2rem;
+  padding-top: 40px;
 }
-p {
+
+#aboutus p {
   font-family: 'Lora', cursive;
   padding: 30px;
   padding-top: 5px;
+  padding-bottom: 20px;
+}
+#main-principles p {
+  font-family: 'Lora', cursive;
+  padding: 30px;
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 .images-small {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 @media (min-width: 700px) {
   .images-small {
     flex-direction: row;
-    justify-content:space-around;
-}
+    justify-content: space-around;
   }
-  
-.form{
+}
+iframe {
+   width: 100%;
+   height: 480px;
+}
+.form {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .form {
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 .form input,
-textarea{
-	min-width:  300px;
-	margin-bottom: 10px;
-	padding: 10px 10px;
-	font-size: 14px;
-	font-family: "Lora", sans-serif;;
-	color: rgba(65, 61, 75, 0.502);
+textarea {
+  min-width: 300px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-family: "Lora", sans-serif;
+  ;
+  color: rgba(65, 61, 75, 0.502);
 }
 
-textarea{
-	height: 190px;
- }
-
-.submit{
-	background-color: Transparent;
-	border:1px rgb(244, 158, 66) solid;
-	padding: 10px;
-	font-size: 14px;
-	color:#0e0e0f;
-	margin-left: 0px;
-	font-weight: bold;
-	max-width: 50px;
+textarea {
+  height: 190px;
 }
-.submit:hover{
-	background: rgb(244, 158, 66); ;
-	color: #fff;
-	transition: all ease 0.5s;
+
+.submit {
+  background-color: Transparent;
+  border: 1px rgb(244, 158, 66) solid;
+  padding: 10px;
+  font-size: 14px;
+  color: #0e0e0f;
+  margin-left: 0px;
+  font-weight: bold;
+  max-width: 50px;
+}
+
+.submit:hover {
+  background: rgb(244, 158, 66);
+  ;
+  color: #fff;
+  transition: all ease 0.5s;
 }
 
 .shiba-img {
@@ -152,4 +195,43 @@ textarea{
 .shiba {
   display: flex;
   justify-content: center;
+}
+.form h4 {
+  color: rgb(49, 91, 59);
+  text-align: center;
+}
+
+.form .shibas-territory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.shibas-territory button {
+  width: 100px;
+  margin: 20px auto;
+}
+
+.form-client-data {
+ text-align: center;
+ margin-top: 10px;
+ 
+}
+
+#contacts a {
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  color: rgb(46, 150, 45);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.logomotto p {
+  font-family: 'Lora', cursive;
+}
+
+#contacts {
+  display: flex;
+  justify-content: space-around;
 }
