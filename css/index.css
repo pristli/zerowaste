@@ -25,7 +25,7 @@ main {
 header {
   background-color: rgb(244, 158, 66);
 }
-header .container {
+header .title {
   background-color: rgb(244, 158, 66);
   padding: 15px;
   min-height: 80px;
@@ -43,7 +43,7 @@ header .logo {
   text-align: center;
 }
 
-header .container nav ul li a {
+header .title nav ul li a {
   text-decoration: none;
   color: var(--primary-color);
   font-family: 'Raleway', sans-serif;
@@ -51,15 +51,15 @@ header .container nav ul li a {
   font-size: 0.8rem;
 }
 
-header .container nav ul li a:hover {
+header .title nav ul li a:hover {
   text-decoration: underline;
 }
 
-header .container nav ul li {
+header .title nav ul li {
   list-style: none;
 }
 
-header .container nav ul {
+header .title nav ul {
   display: flex;
   padding: 0;
   justify-content: space-around;
@@ -69,6 +69,7 @@ header .container nav ul {
 @media (min-width: 500px) {
   header nav {
     display: flex;
+    align-items: flex-end;
   }
 
   header nav ul {
@@ -131,13 +132,20 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5px;
 }
-
+.images-small img {
+  padding-top: 10px;
+}
 @media (min-width: 700px) {
   .images-small {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+.basket {
+  width: 300px;
+  height: 200px;
 }
 iframe {
    width: 100%;
@@ -148,77 +156,104 @@ iframe {
   flex-direction: column;
 }
 
-@media (min-width: 700px) {
-  .form {
-    justify-content: space-around;
-    flex-direction: row;
-  }
-}
-.form input,
-textarea {
+.form input {
   min-width: 300px;
   margin-bottom: 10px;
   padding: 10px 10px;
   font-size: 14px;
-  font-family: "Lora", sans-serif;
-  ;
-  color: rgba(65, 61, 75, 0.502);
+  font-family: 'Lora', cursive;
+  border-radius: 5px;
 }
 
-textarea {
-  height: 190px;
+.form textarea {
+  min-width: 300px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  padding-bottom: 45px;
+  font-size: 14px;
+  font-family: 'Lora', cursive;
+  border-radius: 5px;
 }
 
 .submit {
-  background-color: Transparent;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 1px rgb(244, 158, 66) solid;
+  border-radius: 10px;
   padding: 10px;
   font-size: 14px;
   color: #0e0e0f;
   margin-left: 0px;
-  font-weight: bold;
-  max-width: 50px;
+  font-family: 'Lora', cursive;
 }
 
 .submit:hover {
   background: rgb(244, 158, 66);
-  ;
   color: #fff;
   transition: all ease 0.5s;
 }
 
 .shiba-img {
-  width: 300px;
-  height: 300px;
+  width: 80%;
+  height: 80%;
 }
 
 .shiba {
   display: flex;
   justify-content: center;
 }
-.form h4 {
+
+h4 {
   color: rgb(49, 91, 59);
   text-align: center;
 }
 
-.form .shibas-territory {
+.shibas-territory {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 40px 0;
 }
 
 .shibas-territory button {
-  width: 100px;
   margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px rgb(244, 158, 66) solid;
+  padding: 10px;
+  font-size: 14px;
+  color: #0e0e0f;
+  font-family: 'Lora', cursive;
+  border-radius: 5px;
 }
 
+.shibas-territory button:hover {
+  background: rgb(244, 158, 66);
+  color: #fff;
+  transition: all ease 0.5s;
+} 
+.form {
+  padding: 30px 0;
+}
 .form-client-data {
  text-align: center;
  margin-top: 10px;
  
 }
-
+.quote {
+  background-image: url(/img/peanut.jpeg);
+  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.quote p {
+  color:  rgb(244, 158, 66);
+  max-width: 500px;
+}  
 #contacts a {
   text-decoration: none;
   font-family: 'Indie Flower', cursive;
@@ -233,5 +268,34 @@ textarea {
 
 #contacts {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+@media (min-width: 700px) {
+  #contacts {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+#contacts .contact-middle {
+  display: flex;
+  flex-direction: column;
+}
+.socials {
+  display: flex;
   justify-content: space-around;
+  width: 170px;
+}
+
+.contact-middle .location  {
+  display: flex;
+  align-items: baseline;
+}
+
+.contact-middle .phone-number {
+  display: flex;
+  align-items: center;
 }

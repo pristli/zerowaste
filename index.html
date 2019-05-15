@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>zerowaste</title>
-    <base target="_blank">
     <link rel="shortcut icon" href="img/zerowaste_icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
@@ -14,7 +13,7 @@
 
 <body>
     <header id="home">
-        <div class="container">
+        <div class="title">
             <nav>
                 <p><a href="#" class="logo">Zero Waste</a></p>
                 <ul>
@@ -65,9 +64,6 @@
     </a>
             </div>
         </div>
-        <!--<div class="banner">-->
-        <!--            <h1>Zero waste like a life style</h1>-->
-        <!--</div>-->
     </header>
     <section id="aboutus">
         <h2>What is zerowaste?</h2>
@@ -96,7 +92,7 @@
             all, you will throw them away almost immediately, right? So why take :)</p>
         <div class="images-small">
             <div><img src="img/zerowaste.jpg" alt="img.zerowaste" class="img-small"></div>
-            <div><img src="img/kitchen.jpeg" alt="img.kitchen" class="img-small"></div>
+            <div><img src="img/kitchen.jpg" alt="img.kitchen" class="img-small"></div>
         </div>
         <p><i><b>Reduce</b></i> - reduce consumption, buy as much as you need. Better less than more :) For example, the average European family throws out a quarter of the purchased products. And if you think: they have thrown out the products, they are
             rotten and everything, then everything is not so simple. Together with them, they went to the trash and emissions of CO2 for cultivation and delivery, and thousands of liters of water and fertilizers, and the time of dozens or even hundreds
@@ -106,35 +102,39 @@
         <p><i><b>Recycle</b></i> - recycle. Here, I think, everything is clear: we sort the waste, give it for processing. By the way, only metal and glass can be processed infinitely, plastic and paper have limitations in several cycles. Therefore, when
             buying products, we prefer glass or metal containers.</p>
         <div class="images-small">
-            <div><img src="img/waste-garbage.jpg" alt="Containers for garbage"></div>
-            <div><img src="img/sorting.jpg" alt="Containers for garbage"></div>
+            <div><img src="img/waste-garbage.jpg" alt="Containers for garbage" class="basket"></div>
+            <div><img src="img/sorting.jpg" alt="Containers for garbage" class="basket"></div>
         </div>
         <p><i><b>Rot</b></i> - Compost Organic. If you follow all the preceding principles, then only the remains of the food products: vegetables, fruits,eggs, and the like will be in the bin. All this good can be turned into fertilizer for the soil. There
             are special compost buckets and a certain technology.</p>
     </section>
+    <section>
+        <br>
     <iframe src="https://www.youtube.com/embed/pF72px2R3Hg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
-    <div class="form">
         <div class="shibas-territory">
             <h4>Shiba is enjoying world without waste</h4>
-            <button class="get-shiba">Get Shiba</button>
+            <button class="get-shiba">Look at new shiba</button>
             <div class="shiba"></div>
         </div>
-        <div>
+        <div class="form">
             <form class="form-client-data">
                 <h4>Write to us</h4>
                 <input type="text" name="client-name" placeholder="Name">
-                <br>
                 <br>
                 <input type="email" name="client-mail" placeholder="Email">
                 <br>
                 <textarea name="client-message" placeholder="Your message"></textarea>
                 <br>
-                <input type="submit" class="submit">
+                <input type="submit" class="submit" value="SEND">
                 <div class="server-response"></div>
             </form>
         </div>
     </div>
+    <div class="quote">
+            <p>"It's true, not fashionable, friends. Take care of yourself, your loved ones and the planet - not fashionable, not stylish, not hippies and not youthful maximalism. It's healthy and natural. It's just that we were so fast moving forward with technical progress that we have forgotten a bit about it."</p>
+    </div>
+    </section>
     <footer id="contacts">
         <div class="contacts-left">
             <div><a href="#" class="logo">Zero Waste</a></div>
@@ -153,20 +153,12 @@
                 <p>+38 (093) 86 32 654</p>
             </div>
         </div>
-            <div class="communication">
-                <p>STAY IN TOUCH</p>
-                <form class="client-email">
-                    <input type="email" placeholder="Subscribe our newsletter" name="mail">
-                    <input value="submit" type="submit">
-                    <div class="server-response"></div>
-                </form>
-                <div class="socials">
-                    <div class="socials-img"><a href="#"><img src="img/telegram.png" alt="telegram"></a></div>
-                    <div class="socials-img"><a href="#"><img src="img/youtube.png" alt="youtube"></a></div>
-                    <div class="socials-img"><a href="#"><img src="img/instagram.png" alt="instagram"></a></div>
-                    <div class="socials-img"><a href="#"><img src="img/facebook.png" alt="facebook"></a></div>
-                </div>
-            </div>
+        <div class="socials">
+            <div class="socials-img"><a href="https://t.me/zerowastelviv"><img src="img/telegram.png" alt="telegram"></a></div>
+            <div class="socials-img"><a href="https://www.youtube.com/user/TEDxTalks"><img src="img/youtube.png" alt="youtube"></a></div>
+            <div class="socials-img"><a href="https://www.instagram.com/severus.o/?hl=ru"><img src="img/instagram.png" alt="instagram"></a></div>
+            <div class="socials-img"><a href="https://www.facebook.com/zerowastelviv/"><img src="img/facebook.png" alt="facebook"></a></div>
+        </div>
     </footer>
     <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
