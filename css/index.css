@@ -254,7 +254,7 @@ h4 {
 }
 
 .quote {
-  background-image: url(/img/peanut.jpeg);
+  background-image: url(../img/peanut.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
